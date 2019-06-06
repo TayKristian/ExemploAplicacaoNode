@@ -29,7 +29,7 @@ router.post('/amigos', jsonParser, (req, res) => {
     console.log(req.body.amigo)
     novoAmigo = new amigo({
         nome: req.body.nome,
-        apelido: req.body.apelido,
+        sobrenome: req.body.sobrenome,
         idade: req.body.idade
     });
     novoAmigo.save()
